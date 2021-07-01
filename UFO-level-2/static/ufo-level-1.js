@@ -1,7 +1,6 @@
 // Assign the data from `data.js` to a descriptive variable
-var people = data;
 
-var ufos = otherData;
+var ufos = data;
 
 // Select the button
 var button = d3.select("#button");
@@ -20,13 +19,12 @@ function runEnter() {
   d3.event.preventDefault();
   
   // Select the input element and get the raw HTML node
-  var inputElement = d3.select("#patient-form-input");
+  var inputElement = d3.select("#ufo-state-input");
 
   // Get the value property of the input element
   var inputValue = inputElement.property("value");
 
   console.log('inputValue = ', inputValue);
-  // console.log(people);
 
   // let's get the shape input field text
    // Select the input element and get the raw HTML node
